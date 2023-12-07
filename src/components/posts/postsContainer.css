@@ -1,0 +1,74 @@
+/* Base styles (mobile-first approach) */
+.post-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 10px;
+    /* background-color: #f8f9fa;
+    border: 1px solid #ddd; */
+    height: 80vh; /* Changed from inherit to 100% */
+    width: 100%; /* Use full width on smaller screens */
+}
+
+.posts-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    height: 85vh; /* Removed max-height for base style */
+    margin: 2%;
+    padding: 1%;
+    padding-right: 3% ;
+}
+
+.posts-in ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.postItem {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    /* padding: %; */
+    list-style: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .post-container {
+        margin: 0 10px; /* Adjust margin for larger screens */
+        width: 75vw; /* Width adjusted for larger screens */
+    }
+
+    .posts-in {
+        max-height: 78vh; /* Re-introduce max-height */
+        margin: 2% 0;
+    }
+}
+
+/* Even larger screens */
+@media (min-width: 992px) {
+    .post-container {
+        margin: 0 1%; /* Further adjust margin for larger screens */
+    }
+
+    /* You may want to adjust the height as well for very tall screens */
+    .posts-in {
+        max-height: 80vh;
+    }
+}
+
+/* Largest screens */
+@media (min-width: 1200px) {
+    .post-container {
+        margin: 0 auto; /* Center the container */
+        max-width: 1200px; /* Max width for very large screens */
+    }
+}

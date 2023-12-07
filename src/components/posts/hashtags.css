@@ -1,0 +1,31 @@
+.trendPost-container{
+    flex: auto .20; /* Adjust the flex value to change the width */
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 2px;
+    padding: 20px;
+    /* border: 1px solid #ddd; 
+    border-radius: 10px;
+    background-color: #f8f9fa; */
+    height: inherit;
+    width: 15vw;
+  }
+
+  .trend-hashtags{
+    height: 45%;
+    /* margin: 0 20px; */
+    border: 1px solid #ddd; /* For visibility */
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    
+  }
+
+  .user-hashtags{
+    height: 45%;
+    /* margin: 0 20px; */
+    border: 1px solid #ddd; /* For visibility */
+    border-radius: 10px;
+    background-color: #f8f9fa;
+  }

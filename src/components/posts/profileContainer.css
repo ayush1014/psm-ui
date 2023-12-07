@@ -1,0 +1,10 @@
+.profile-container{
+    flex: auto .15; /* Adjust the flex value to change the width */
+    padding: 20px;
+    border: 1px solid #ddd; /* For visibility */
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    height: inherit;
+    width: 10vw;
+  }
+
