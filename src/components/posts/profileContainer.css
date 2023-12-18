@@ -1,10 +1,41 @@
 .profile-container{
-    flex: auto .15; /* Adjust the flex value to change the width */
+    flex: auto .15; 
     padding: 20px;
-    border: 1px solid #ddd; /* For visibility */
+    border: 1px solid #ddd; 
     border-radius: 10px;
     background-color: #f8f9fa;
     height: inherit;
     width: 10vw;
+    overflow-y: auto;
   }
 
+.userItems{
+
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  /* align-items: center; */
+  overflow: hidden;
+  overflow-y: auto;
+  margin-top: 0;
+  padding-top: auto;
+  /* background-color: aqua; */
+  height: 350px;
+  padding: 1%;
+  padding-top: 5%;
+  box-sizing: border-box;
+  font-size: 75%;
+  text-align: center;
+}
+
+.userItems ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.span-text{
+  padding-top: 20%;
+  font-size: 80%;
+  text-align: left;
+}

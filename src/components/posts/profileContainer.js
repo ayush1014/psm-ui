@@ -48,7 +48,10 @@ function ProfileContainer() {
                                 <button>Fans</button>
                                 <button>Admires</button>
                             </div>
-                            <div>
+                            <div className='span-text'>
+                                <span>@Recommended Users</span>
+                            </div>
+                            <div className='userItems'>
                                 <ul>
                                 {
                                     allUsers.map((eachUser)=>(

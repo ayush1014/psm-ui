@@ -70,8 +70,8 @@ function PostItem({ post }) {
         <li>
           <div>
             {post.postdescription}
-            <div>
-            <span>created by: @{post.createdBy}</span>
+            <div className='createdBy-span'>
+              <span>created by: @{post.createdBy}</span>
             </div>
           </div>
           {isUser &&

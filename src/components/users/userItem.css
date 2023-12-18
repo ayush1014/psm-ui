@@ -1,0 +1,7 @@
+.profile-user li{
+    list-style: none;
+    padding: 7%;
+}
+.createdBy-span{
+    font-size: 50%;
+}
