@@ -38,7 +38,7 @@ function UserItem({ userInstance }) {
     return (
         <div className='profile-user'>
             <li>
-                <div> <AccountCircleSharpIcon style={{ fontSize: '100%' }} />{userInstance.username}</div>
+                <div className='user-admire-name'> <AccountCircleSharpIcon style={{ fontSize: '100%' }} />{userInstance.username}</div>
                 {
                     isFollowing ? <button className='unfollow-btn' onClick={unFollow}>Unadmire</button> :
                         <button className='follow-btn' onClick={followUser}>Admire</button>

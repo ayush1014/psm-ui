@@ -27,7 +27,7 @@ function PostsContainer() {
         <div className='post-container'>
             {!creatingPost ? <div>
                 <div className='create-post'>
-                <button onClick={(e) => { setCreatingPost(true) }}> + Create Post</button>
+                <button onClick={(e) => { setCreatingPost(true) }}>Create Post</button>
                 </div>
             <div className='posts-in'>
                         {/* <span>Hello</span> */}

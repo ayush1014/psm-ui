@@ -42,9 +42,11 @@ function ProfileContainer() {
                     <div >
 
                         <div className='profile'>
+                            <div className='profile-username'>
                             <AccountCircleSharpIcon style={{ fontSize: '200%' }} />
-                            <span id='profile'>{user.username}</span>
-                            <div>
+                            <span className='profile-name'>{user.username}</span>
+                            </div>
+                            <div className='fans-btn'>
                                 <button>Fans</button>
                                 <button>Admires</button>
                             </div>
@@ -60,9 +62,9 @@ function ProfileContainer() {
                                 }
                                 </ul>
                             </div>
-                            <div>
+                            <div className='logout-btn-container'>
                                 <br></br>
-                                <button onClick={logOff}>Log Out</button>
+                                <button className='logout-btn' onClick={logOff}>Log Out</button>
                             </div>
                          
 

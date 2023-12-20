@@ -1,25 +1,23 @@
-.profile-container{
-    flex: auto .15; 
-    padding: 20px;
-    border: 1px solid #ddd; 
-    border-radius: 10px;
-    background-color: #f8f9fa;
-    height: inherit;
-    width: 10vw;
-    overflow-y: auto;
-  }
+.profile-container {
+  flex: auto .15; 
+  padding: 2%;
+  border: 1px solid #ddd; 
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  height: 78vh;
+  width: 10vw;
+  overflow-y: auto;
+  margin-top: 5%;
+}
 
-.userItems{
-
+.userItems {
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
-  /* align-items: center; */
+  justify-content: flex-start;
   overflow: hidden;
   overflow-y: auto;
   margin-top: 0;
   padding-top: auto;
-  /* background-color: aqua; */
   height: 350px;
   padding: 1%;
   padding-top: 5%;
@@ -33,9 +31,118 @@
   margin: 0;
   width: 100%;
 }
-
-.span-text{
+.profile-username{
+  display: flex;
+  flex-direction: column;
+}
+.profile-name{
+  color: black;
+  font-size: 140%
+}
+.span-text {
   padding-top: 20%;
   font-size: 80%;
   text-align: left;
+  font-weight: bolder;
+}
+
+.fans-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 8%;
+  justify-content: center; /* Center the buttons */
+  padding-top: 1rem;
+}
+
+.fans-btn button {
+  align-self: center;
+  background-color: #fff;
+  border-radius: 7px ;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  color: #41403e;
+  cursor: pointer;
+  font-family: Neucha, sans-serif;
+  font-size: 80%;
+  font-weight: bolder;
+  padding: .40rem;
+  
+  transition: all 235ms ease-in-out;
+}
+
+.fans-btn button:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.fans-btn button:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.logout-btn-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.logout-btn{
+  align-self: center;
+  background-color: #e657577c;
+  border-radius: 7px ;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  color: #413f3e;
+  cursor: pointer;
+  font-family: Neucha, sans-serif;
+  font-size: 80%;
+  font-weight: bolder;
+  padding: .40rem;
+  transition: all 235ms ease-in-out;
+}
+
+.logout-btn:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  color: #fff;
+  background-color: red;
+}
+
+.logout-btn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 20vw; /* Slightly wider on medium screens */
+  }
+
+  .userItems {
+    height: 300px; /* Adjust height for medium screens */
+  }
+
+  .fans-btn {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: center;
+  }
+
+  .fans-btn button {
+    width: 80%; /* Wider buttons for better touch targets */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    width: 30vw; /* Wider on very small screens */
+  }
+
+  .userItems {
+    height: 250px; /* Adjust height for small screens */
+  }
+
+  .fans-btn button {
+    font-size: 70%; /* Slightly larger font size for readability */
+  }
 }

@@ -1,7 +1,74 @@
-.profile-user li{
+.profile-user li {
     list-style: none;
     padding: 7%;
+    
 }
-.createdBy-span{
+.user-admire-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 115%;
+    font-weight: 600;
+
+}
+.profile-user{
+    display: flex;
+    flex-direction: column;
+}
+
+.createdBy-span {
     font-size: 50%;
+}
+
+.follow-btn {
+    align-self: center;
+    background-color: #fff;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    color: #41403e;
+    cursor: pointer;
+    font-family: Neucha, sans-serif;
+    font-size: 95%;
+    font-weight: bolder;
+    padding: .40rem;
+    transition: all 235ms ease-in-out;
+    margin-top: 4%;
+}
+
+.follow-btn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.follow-btn:focus {
+    box-shadow: rgba(0, 0, 0, .3)
+}
+
+.unfollow-btn {
+    align-self: center;
+    background-color: #fff;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    color: #41403e;
+    cursor: pointer;
+    font-family: Neucha, sans-serif;
+    font-size: 95%;
+    font-weight: bolder;
+    padding: .40rem;
+    transition: all 235ms ease-in-out;
+    margin-top: 4%;
+}
+
+.unfollow-btn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.unfollow-btn:focus {
+    box-shadow: rgba(0, 0, 0, .3)
 }

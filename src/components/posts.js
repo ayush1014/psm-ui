@@ -10,23 +10,24 @@ import ProfileContainer from './posts/profileContainer';
 
 function Posts() {
 
-   
 
-    
+
+
     return (
-        <div className='main-div'>
-            <div className='heading'>
+        <>
+            <div className='main-div'>
                 <h1>Posting Media</h1>
+                <div className='dashboard'>
+
+                    <Hashtags />
+
+                    <PostsContainer />
+
+                    <ProfileContainer />
+
+                </div>
             </div>
-            <div className='dashboard'>
-                <Hashtags/>
-
-                <PostsContainer/>
-
-                <ProfileContainer/>
-
-            </div>
-        </div>
+        </>
     )
 }
 
